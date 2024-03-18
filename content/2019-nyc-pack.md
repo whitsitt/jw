@@ -2,7 +2,7 @@
 date: 2019-10-30T01:00:00.000+00:00
 author: Joe Whitsitt
 cover:
-  image: "images/IMG_20190831_175343-EFFECTS.jpg"
+  image: "https://joe.whitsitt.org/images/IMG_20190831_175343-EFFECTS.jpg"
   alt: "View of NYC, Empire State building, looking North"
   relative: false
 title: "2019 NYC Pack List"

@@ -3,7 +3,7 @@ date: 2019-10-07T03:00:00.000+00:00
 title: Hello Gatsby
 author: Joe Whitsitt
 cover:
-  image: "images/art-artistic-background-459301.jpg"
+  image: "https://joe.whitsitt.org/images/art-artistic-background-459301.jpg"
   relative: false
 category: website, web development
 tags: 

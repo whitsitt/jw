@@ -1,7 +1,7 @@
 ---
 date: 2021-08-07T19:48:43Z
 cover:
-  image: "images/pxl_20210615_205627015.jpeg"
+  image: "https://joe.whitsitt.org/images/pxl_20210615_205627015.jpeg"
   alt: "Shell lake, BWCA"
   relative: false
 title: 2021 Boundary Waters Canoe Area Trip

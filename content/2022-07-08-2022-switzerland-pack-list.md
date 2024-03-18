@@ -15,7 +15,7 @@ type: post
 description: A brief overview of my trip to Switzerland and the things I packed.
 comments: false
 cover:
-  image: "images/20220527_133318.jpeg"
+  image: "https://joe.whitsitt.org/images/20220527_133318.jpeg"
   alt: "Biking into the Swiss Alps"
   relative: false
 aliases:
