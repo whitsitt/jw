@@ -22,7 +22,7 @@ Going into Labor Day weekend, Abby and I traveled to New York City to attend my 
 
 All in all, with travel to/from, we spent 5 nights, went carry-on only and had a wide range of events dictating dress code. Weather sunny in the high 80s. Urban sightseeing, broadway theatre, casual to fancy dining, a formal wedding and Ultimate Frisbee in Central Park.
 
-{{< fig src="images/IMG_20190827_221839.jpg" caption="Knolling my packed items" alt="My NYC packlist laid out for display" >}}
+![My NYC packlist laid out for display](images/IMG_20190827_221839.jpg)
 
 * Dress shoes
 * Running shoes
@@ -58,7 +58,7 @@ All in all, with travel to/from, we spent 5 nights, went carry-on only and had a
 
 Deodorant, belt, hanky, phone, hat, plastic grocery bags (2), bag of mixed nuts.
 
-{{< fig src="images/IMG_20190827_220602.jpg" caption="Packed view of backpack" alt="Packed backpack for NYC trip" >}}
+![Packed backpack for NYC trip](images/IMG_20190827_220602.jpg)
 
 **Wearing on the plane**:
 

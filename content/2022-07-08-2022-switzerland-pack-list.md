@@ -25,7 +25,7 @@ I recently had the fortune of going to Switzerland to visit with my friend in an
 
 In terms of packing, this was a bit of an oddity for me. Normally, I do a bike trip or an international trip, not both. Trying to pack light enough to carry-on internationally while being prepared for some serious biking made things a bit challenging. Thankfully, I would be renting a bike and borrowing a helmet, but there were still a couple things I needed to be happy and safe on the bike.
 
-{{< fig src="images/img_0629.jpg" caption="Knolling my packed items" alt="My Switzerland pack list items laid out for display" >}}
+![My Switzerland pack list items laid out for display](/images/img_0629.jpg)
 
 Though I packed a seat bag for my bike, when I arrived, I found out that my rental came with a handlebar bag. I ended up using this for every ride except for the overnight trip when I lended it to my friend for their bike and used my seat bag instead. I was impressed with the handlebar bag. If I had my own, it would pack a lot better for the trip while still providing the same amount of storage. Both are a pain to get snacks or a phone out while riding, but pair one with a top-tube "gas tank" bag or a fanny pack and it would do nicely for an overnight "credit-card tour."
 

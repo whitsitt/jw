@@ -9,3 +9,7 @@
   text-decoration: underline;
   box-shadow: none;
 }
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
