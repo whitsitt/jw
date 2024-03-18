@@ -1,10 +1,8 @@
-baseURL: https://joe.whitsitt.org
+baseURL: http://joe.whitsitt.org
 languageCode: en-us
 title: (jw) Joe Whitsitt
 theme: ["PaperMod"]
 paginate: 5
-RelativeURLs: true
-CanonifyURLs: true
 
 
 enableInlineShortcodes: true
