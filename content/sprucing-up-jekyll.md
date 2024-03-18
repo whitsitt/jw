@@ -4,7 +4,7 @@ title: Sprucing up Jekyll
 author: Joe Whitsitt
 cover:
   image: "images/igor-son-FV_PxCqgtwc-unsplash.jpg"
-  relative: false
+  relative: true
 comments: false
 category: website, web development
 tags:

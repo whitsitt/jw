@@ -3,7 +3,7 @@ date: 2019-10-19T01:00:00.000+00:00
 author: Joe Whitsitt
 cover:
   image: "images/annie-spratt-m1t-RJ1iCIU-unsplash.jpg"
-  relative: false
+  relative: true
 title: "So I Became a Vegetarian"
 category: personal
 tags:

@@ -3,7 +3,7 @@ date: 2017-02-01T01:00:00.000+00:00
 author: Joe Whitsitt
 cover:
   image: "images/pfalcons.png"
-  relative: false
+  relative: true
 title: Converting a website from Drupal to Jekyll
 category: web development
 tags: 

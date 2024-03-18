@@ -4,7 +4,7 @@ author: Joe Whitsitt
 cover:
   image: "images/IMG_20200208_095653.jpg"
   alt: "View of \"Thaynes Caynon\" run from \"Quicksilver Gondola\" at Park City, Utah"
-  relative: false
+  relative: true
 title: "2020 Ski Trip Pack List"
 category: personal
 tags: 

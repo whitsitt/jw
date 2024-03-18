@@ -4,7 +4,7 @@ title: Hello Gatsby
 author: Joe Whitsitt
 cover:
   image: "images/art-artistic-background-459301.jpg"
-  relative: false
+  relative: true
 category: website, web development
 tags: 
   - gatsby

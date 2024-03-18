@@ -17,7 +17,7 @@ comments: false
 cover:
   image: "images/20220527_133318.jpeg"
   alt: "Biking into the Swiss Alps"
-  relative: false
+  relative: true
 aliases:
   - /posts/2022-07-08-2022-switzerland-pack-list/
 ---

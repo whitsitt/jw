@@ -14,7 +14,7 @@ description: I am one of the ten people* that bought the iPhone SE
 cover:
   image: images/img_0145.jpeg
   alt: iphone se 2022 product red
-  relative: false
+  relative: true
 comments: false
 aliases:
   - /posts/2022-04-03-from-android-back-to-ios/

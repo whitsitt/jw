@@ -3,7 +3,7 @@ date: 2019-12-07T01:00:00.000+00:00
 author: Joe Whitsitt
 cover:
   image: "images/prateek-katyal-xv7-GlvBLFw-unsplash.jpg"
-  relative: false
+  relative: true
 title: A case against social media timeline widgets
 category: web development
 tags:

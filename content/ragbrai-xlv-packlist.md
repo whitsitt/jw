@@ -3,7 +3,7 @@ date: 2017-07-21T01:00:00.000+00:00
 author: Joe Whitsitt
 cover:
   image: "images/IMG_0789-rotate.jpeg"
-  relative: false
+  relative: true
 title: 'Follow-Up: RAGBRAI XLV (2017) Pack List'
 comments: false
 category: personal

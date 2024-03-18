@@ -4,7 +4,7 @@ title: Hello world
 author: Joe Whitsitt
 cover:
   image: "images/adrien-olichon--aOsCcTJXWY-unsplash.jpg"
-  relative: false
+  relative: true
 category: website, web development
 tags: 
   - jekyll

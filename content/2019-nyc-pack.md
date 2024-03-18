@@ -4,7 +4,7 @@ author: Joe Whitsitt
 cover:
   image: "images/IMG_20190831_175343-EFFECTS.jpg"
   alt: "View of NYC, Empire State building, looking North"
-  relative: false
+  relative: true
 title: "2019 NYC Pack List"
 category: personal
 tags: 
