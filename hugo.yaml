@@ -3,6 +3,8 @@ languageCode: en-us
 title: (jw) Joe Whitsitt
 theme: ["PaperMod"]
 paginate: 5
+RelativeURLs: true
+CanonifyURLs: true
 
 
 enableInlineShortcodes: true
