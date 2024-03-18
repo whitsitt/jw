@@ -2,7 +2,7 @@
 date: 2019-10-05T01:00:00.000+00:00
 author: Joe Whitsitt
 cover:
-  image: "https://joe.whitsitt.org/images/sarah-dorweiler-9Z1KRIfpBTM-unsplash.jpg"
+  image: "images/sarah-dorweiler-9Z1KRIfpBTM-unsplash.jpg"
   relative: false
 title: "We have a budget"
 category: personal

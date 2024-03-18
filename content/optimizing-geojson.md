@@ -2,7 +2,7 @@
 date: 2018-06-22T01:00:00.000+00:00
 author: Joe Whitsitt
 cover:
-  image: "https://joe.whitsitt.org/images/elcarito-CRn-_80z4SE-unsplash.jpg"
+  image: "images/elcarito-CRn-_80z4SE-unsplash.jpg"
   relative: false
 title: Optimizing GeoJSON
 category: web development

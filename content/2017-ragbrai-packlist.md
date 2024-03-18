@@ -11,7 +11,7 @@ tags:
   - camping
 type: post
 cover:
-  image: "https://joe.whitsitt.org/images/IMG_0789-rotate.jpeg"
+  image: "images/IMG_0789-rotate.jpeg"
   alt: "My RAGBRAI packlist laid out for display"
   relative: false
 comments: false

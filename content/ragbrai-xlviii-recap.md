@@ -1,7 +1,7 @@
 ---
 date: 2021-08-07T21:45:12Z
 cover:
-  image: "https://joe.whitsitt.org/images/pxl_20210727_174939767.jpeg"
+  image: "images/pxl_20210727_174939767.jpeg"
   alt: "My RAGBRAI packlist laid out for display"
   relative: false
 title: RAGBRAI XLVIII Recap
