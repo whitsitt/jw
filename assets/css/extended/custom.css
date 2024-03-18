@@ -1,0 +1,11 @@
+/* Accessibility tweaks */
+.post-tags a {
+  color: var(--primary);
+}
+.paginav .title {
+  color: var(--primary);
+}
+.post-content a {
+  text-decoration: underline;
+  box-shadow: none;
+}
