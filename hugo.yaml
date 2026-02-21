@@ -2,7 +2,8 @@ baseURL: https://joe.whitsitt.org/
 languageCode: en-us
 title: (jw) Joe Whitsitt
 theme: ["PaperMod"]
-paginate: 5
+pagination:
+  pagerSize: 5
 
 
 enableInlineShortcodes: true
@@ -18,6 +19,8 @@ mainsections: ["post"]
 minify:
   disableXML: true
   # minifyOutput: true
+
+ignoreLogs: ['warning-partial-superfluous-prefix']
 
 languages:
   en:
@@ -189,5 +192,5 @@ markup:
 services:
   instagram:
     disableInlineCSS: true
-  twitter:
+  x:
     disableInlineCSS: true
