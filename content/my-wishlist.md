@@ -16,7 +16,6 @@ Just in case you would like to get me something...
 
 # Always
 
-- Spotify Premium
 - Pancheros/Chipotle
 - Good beer
 - Mushroom Jerky
