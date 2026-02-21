@@ -122,7 +122,7 @@ params:
 
 
   editPost:
-    URL: "https://github.com/whitsitt/jw/content"
+    URL: "https://github.com/whitsitt/jw/tree/main/content"
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 
