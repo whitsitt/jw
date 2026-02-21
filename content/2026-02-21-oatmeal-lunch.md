@@ -2,6 +2,17 @@
 title: "My Daily Lunch Ritual: Cold-Soaked Oatmeal for 6+ Years"
 date: 2026-02-21T10:00:00Z
 draft: false
+type: post
+description: What I eat for lunch almost every day.
+comments: false
+author: Joe Whitsitt
+comments: false
+category:
+  - personal
+tags:
+  - nutrition
+  - food
+  - routines
 ---
 
 I like to establish minimalist routines where I can and there is one routine I am surprised I haven't grown tired of. I eat cold-soaked oatmeal pretty much every day. Working from home, lunch is where I am on my own. I microwave it when I am home, but with slight modifications it is the same that I bring with me on adventures and just cold-soak ahead of mealtime.
