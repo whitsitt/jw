@@ -3,7 +3,7 @@ date: 2016-10-17T03:00:00.000+00:00
 title: Sprucing up Jekyll
 author: Joe Whitsitt
 cover:
-  image: "images/igor-son-FV_PxCqgtwc-unsplash.jpg"
+  image: "igor-son-FV_PxCqgtwc-unsplash.jpg"
   relative: true
 comments: false
 category: website, web development

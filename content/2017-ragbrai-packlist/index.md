@@ -11,7 +11,7 @@ tags:
   - camping
 type: post
 cover:
-  image: "images/IMG_0789-rotate.jpeg"
+  image: "IMG_0789-rotate.jpeg"
   alt: "My RAGBRAI packlist laid out for display"
   relative: true
 comments: false

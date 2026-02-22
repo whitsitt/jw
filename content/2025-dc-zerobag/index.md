@@ -14,7 +14,7 @@ type: post
 description: A brief overview of my zero-bag trip to Washington, D.C.
 comments: false
 cover:
-  image: "images/cr6x98lh6ape1.jpeg"
+  image: "cr6x98lh6ape1.jpeg"
   alt: "Knolling my belongings for the trip"
   relative: true
 ---

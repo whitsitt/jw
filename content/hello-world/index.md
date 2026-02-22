@@ -3,7 +3,7 @@ date: 2016-01-24T03:00:00.000+00:00
 title: Hello world
 author: Joe Whitsitt
 cover:
-  image: "images/adrien-olichon--aOsCcTJXWY-unsplash.jpg"
+  image: "adrien-olichon--aOsCcTJXWY-unsplash.jpg"
   relative: true
 category: website, web development
 tags: 

@@ -20,7 +20,7 @@ tags:
 type: post
 description: Thoughts and notes about moving to Hugo from GatsbyJS
 cover:
-  image: images/francesco-mazzoli-0xh3QPqcfKM-unsplash.jpg
+  image: francesco-mazzoli-0xh3QPqcfKM-unsplash.jpg
   relative: true
 aliases:
   - /posts/2022-02-26-move-to-hugo/

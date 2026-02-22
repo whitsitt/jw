@@ -12,7 +12,7 @@ tags:
 type: post
 description: I am one of the ten people* that bought the iPhone SE
 cover:
-  image: images/img_0145.jpeg
+  image: img_0145.jpeg
   alt: iphone se 2022 product red
   relative: true
 comments: false
