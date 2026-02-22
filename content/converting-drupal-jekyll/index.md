@@ -1,8 +1,5 @@
----
 date: 2017-02-01T01:00:00.000+00:00
 author: Joe Whitsitt
-  image: "pfalcons.png"
-  relative: true
 title: Converting a website from Drupal to Jekyll
 category: web development
 tags: 
@@ -18,6 +15,8 @@ aliases:
   - /2017/02/01/converting-drupal-jekyll
   - /blog/converting-drupal-jekyll
   - /posts/converting-drupal-jekyll
+image: "pfalcons.png"
+relative: true
 ---
 These days, I don’t always have the personal time to maintain a bunch of [Drupal](//drupal.org) sites. Heck, it has taken a while for me to even find time to write this post.
 
