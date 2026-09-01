@@ -1,6 +1,8 @@
 ---
 title: "10 Days from Takeoff — Slovenia/Croatia by Bike"
 date: 2026-09-01
+draft: false
+type: post
 tags: ["air-travel", "camping", "cycling", "travel", "slocro"]
 ---
 
