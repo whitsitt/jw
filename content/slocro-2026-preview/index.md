@@ -3,6 +3,10 @@ title: "10 Days from Takeoff — Slovenia/Croatia by Bike"
 date: 2026-09-01
 draft: false
 type: post
+cover:
+  image: "slocro_route.jpg"
+  alt: "Tentative bicycle route for Slovenia/Croatia"
+  relative: true
 tags: ["air-travel", "camping", "cycling", "travel", "slocro"]
 ---
 
