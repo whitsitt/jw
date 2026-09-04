@@ -12,8 +12,6 @@ cover:
 
 The preview post covered the route, so this one is just what I am packing. Everything on the bike plus what I wear on the flight comes to about 19 pounds in the panniers and 4 pounds worn.
 
-![My packlist laid out for the photo](IMG_1790.jpg)
-
 The tent and poles fly in a rolling checked suitcase that will stay at Klement's family's house in Ljubljana during the ride. Mike is bringing a camp stove and Klement has gas canisters from previous trips, so I don't need my own. Most campsites have restaurants, so I am relying on town food and cold-soak backups.
 
 The overnight lows in the mountains will dip to 4-10°C (39-50°F). The layering system needs to handle cold morning starts, long climbs that heat up fast and technical descents that cool down just as fast. I am still debating whether the Keen Commuter SPD sandals plus Xero sandals spread is worth it or if I should just bring a pair of Samba ADVs and call it done.
