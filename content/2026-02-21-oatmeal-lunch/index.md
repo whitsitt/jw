@@ -6,7 +6,6 @@ type: post
 description: What I eat for lunch almost every day.
 comments: false
 author: Joe Whitsitt
-comments: false
 category:
   - personal
 tags:
