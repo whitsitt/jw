@@ -4,8 +4,8 @@ date: 2026-09-26
 draft: false
 type: post
 cover:
-  image: "IMG_0991.jpg"
-  alt: "Me on the bike during the trip"
+  image: "hike-a-bike.jpg"
+  alt: "Hike-a-bike on the trail we bailed on"
   relative: true
 tags: ["travel", "cycling", "camping", "slocro"]
 ---
