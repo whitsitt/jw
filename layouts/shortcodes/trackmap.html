@@ -1,0 +1,35 @@
+{{/* trackmap — interactive Leaflet map for one riding day.
+     Params: id (unique), data (site-root path to a FeatureCollection .geojson),
+             label, color, height (px, optional)
+*/}}
+<div class="trackmap">
+  <div class="trackmap-head">{{ .Get "label" }}</div>
+  <div id="tm-{{ .Get "id" }}" class="trackmap-canvas" style="height:{{ with .Get "height" }}{{ . }}{{ else }}420px{{ end }}"></div>
+</div>
+<link rel="stylesheet" href="/leaflet/leaflet.css">
+<script src="/leaflet/leaflet.js"></script>
+<script>
+(function () {
+  var el = document.getElementById('tm-{{ .Get "id" }}');
+  if (!el || typeof L === 'undefined') return;
+  var map = L.map(el, { scrollWheelZoom: false });
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  }).addTo(map);
+  fetch('{{ .Get "data" }}').then(function (r) { return r.json(); }).then(function (fc) {
+    if (!fc || !fc.features || !fc.features.length) return;
+    var bounds = [], color = '{{ .Get "color" }}';
+    fc.features.forEach(function (f) {
+      var line = L.geoJSON(f, {
+        style: { color: color, weight: 3, opacity: 0.9 }
+      });
+      var d = (f.properties && f.properties.distanceKm) ? f.properties.distanceKm + ' km' : '';
+      line.bindPopup((f.properties && f.properties.name || 'Track') + (d ? ' &mdash; ' + d : ''));
+      line.addTo(map);
+      bounds.push(line.getBounds());
+    });
+    if (bounds.length) map.fitBounds(L.latLngBounds(bounds), { padding: [24, 24], maxZoom: 13 });
+  });
+})();
+</script>

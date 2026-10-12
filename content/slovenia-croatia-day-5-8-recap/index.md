@@ -19,3 +19,13 @@ Day 7 was the rest day, and the plan was to do nothing. I'd slept hot and woken 
 Day 8 was the sharpest yet. I slept better, less air in the pillow and no earplugs, though my sleeping pad has developed a small leak somewhere. We started just after 7 in the morning and there was already a fair bit of traffic on the road out. It got worse from there. Mike tried to shave the climb out as best he could, but it put us on a main road with heavy traffic, no shoulder, high winds, and a steep, long climb. When it was done, it came in as my highest elevation gain ever recorded on Strava, though Montana predates the app. It was cold, which was a relief on the climb but not so nice on the descents. The day ended in a proper nowhere, a remote pocket right on the edge of Risnjak National Park and firmly in what I took for bear country. Walking back from dinner I could've sworn I heard a bear growling in the distance, then a gunshot. It set the heart going, though Mike later found out from someone local that the sound was actually roe deer doing their calls, and the shot was an unrelated rural one. False alarm, but we weren't taking chances; for a few dollars more than the tents we got outlets and showers, and no bears. 48.92 miles, 4:54 rolling at 10 mph average, and 5,351 feet of gain.
 
 Five days in, the legs are carrying stories, from the gravel grind of Day 5 to the fog-free first swim of the rest day to the biggest climb I've ever recorded on Day 8. We're into the home stretch now, heading back over the border into Slovenia tomorrow.
+
+## The actual tracks
+
+The GPS from my watch, mapped. The rest day on the coast has no track.
+
+{{< trackmap id="day5" data="/slovenia-croatia-day-5-8-recap/tracks/day5.geojson" label="Day 5" color="#16a085" height="360px" >}}
+
+{{< trackmap id="day6" data="/slovenia-croatia-day-5-8-recap/tracks/day6.geojson" label="Day 6" color="#8e44ad" height="360px" >}}
+
+{{< trackmap id="day8" data="/slovenia-croatia-day-5-8-recap/tracks/day8.geojson" label="Day 8" color="#2c3e50" height="360px" >}}

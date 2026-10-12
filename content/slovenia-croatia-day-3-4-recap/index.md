@@ -27,3 +27,11 @@ My left knee keeps getting worse, the same issue as all of my past tours. I can'
 The place we're staying is nice, not a boarding house but a proper bed-and-dinner place. I got a separate bedroom while Mike and Klement share twin beds. Airing everything out has been worth it. Dinner was expensive, slow food that left me a little hungry. Tomorrow looks like a long, mostly valley-grinding ride with a hilly ramp up at the end.
 
 Across the two days the stats tell a story. Day 3 came in at 45.78 miles and 4,196 feet of gain under four hours of rolling, a touch under 11.3 mph average. Day 4 was shorter but sharper at 35.22 miles and 4,619 feet at a hard-earned 9 mph average, and it held my biggest recorded climb. The ratio of climbing to miles jumped, but it felt better than the numbers.
+
+## The actual tracks
+
+The GPS from my watch, mapped.
+
+{{< trackmap id="day3" data="/slovenia-croatia-day-3-4-recap/tracks/day3.geojson" label="Day 3" color="#d35400" height="360px" >}}
+
+{{< trackmap id="day4" data="/slovenia-croatia-day-3-4-recap/tracks/day4.geojson" label="Day 4" color="#2980b9" height="360px" >}}
