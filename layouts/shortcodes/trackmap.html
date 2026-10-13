@@ -1,8 +1,10 @@
 {{/* trackmap — interactive Leaflet map for one riding day.
      Params: id (unique), data (site-root path to a FeatureCollection .geojson),
              label, color (default red), weight (default 5), height (px, optional)
+     Renders: red track, start/end markers, and an elevation profile strip.
      Leaflet assets are injected ONCE per page (page-scoped Store flag) so that
      multiple maps on one page don't reload/re-execute Leaflet and break each other.
+     Tracks carry elevation as the third coordinate [lon, lat, elev].
 */}}
 {{- $id     := .Get "id" -}}
 {{- $data   := .Get "data" -}}
@@ -18,9 +20,83 @@
 <div class="trackmap">
   <div class="trackmap-head">{{ $label }}</div>
   <div id="tm-{{ $id }}" class="trackmap-canvas" style="height:{{ $height }}"></div>
+  <div id="tmelev-{{ $id }}" class="trackmap-elev"></div>
 </div>
 <script>
 (function () {
+  function pinHtml(txt, bg) {
+    return '<span style="display:inline-flex;align-items:center;justify-content:center;min-width:22px;height:22px;padding:0 4px;box-sizing:border-box;background:' + bg + ';color:#fff;font:bold 12px/1 system-ui,-apple-system,sans-serif;border-radius:11px;border:2px solid #fff;box-shadow:0 1px 5px rgba(0,0,0,.45);-webkit-user-select:none;user-select:none">' + txt + '</span>';
+  }
+  function makePin(txt, bg) {
+    return L.divIcon({
+      className: '',
+      html: pinHtml(txt, bg),
+      iconSize: [22, 22],
+      iconAnchor: [11, 11],
+      popupAnchor: [0, -16]
+    });
+  }
+  function addPins(map, coords) {
+    if (!coords.length) return;
+    var s = coords[0], e = coords[coords.length - 1];
+    var stMsg = 'Start' + (typeof s[2] === 'number' ? ' \u00b7 ' + s[2] + ' m' : '');
+    var enMsg = 'End' + (typeof e[2] === 'number' ? ' \u00b7 ' + e[2] + ' m' : '');
+    L.marker([s[1], s[0]], { icon: makePin('S', '#16a085'), title: stMsg })
+      .bindPopup('<b>'+stMsg+'</b>').openPopup()
+      .addTo(map);
+    L.marker([e[1], e[0]], { icon: makePin('E', '#c0392b'), title: enMsg })
+      .bindPopup('<b>'+enMsg+'</b>').addTo(map);
+  }
+  function elevSeries(coords) {
+    var R = 6371e3, toR = Math.PI / 180, data = [], dist = 0;
+    for (var i = 0; i < coords.length; i++) {
+      if (i > 0) {
+        var a = coords[i - 1], b = coords[i];
+        var dLat = (b[1] - a[1]) * toR, dLng = (b[0] - a[0]) * toR;
+        var la1 = a[1] * toR, la2 = b[1] * toR;
+        var h = Math.sin(dLat / 2) * Math.sin(dLat / 2) + Math.cos(la1) * Math.cos(la2) * Math.sin(dLng / 2) * Math.sin(dLng / 2);
+        dist += 2 * R * Math.asin(Math.sqrt(h));
+      }
+      data.push([dist / 1000, typeof coords[i][2] === 'number' ? coords[i][2] : 0]);
+    }
+    return data;
+  }
+  function drawProfile(contId, coords, color, trueDist) {
+    var el = document.getElementById(contId);
+    if (!el || !coords.length) return;
+    var data = elevSeries(coords);
+    var W = 680, H = 150, L = 64, R = 30, T = 18, B = 26;
+    var min = Infinity, max = -Infinity;
+    for (var i = 0; i < data.length; i++) {
+      if (data[i][1] < min) min = data[i][1];
+      if (data[i][1] > max) max = data[i][1];
+    }
+    if (!isFinite(min)) return;
+    var pad = (max - min) * 0.1 || 1;
+    var lo = Math.max(0, min - pad), hi = max + pad;
+    var tot = (trueDist > 0) ? trueDist : data[data.length - 1][0];
+    var climb = 0;
+    for (var j = data.length - 1; j > 0; j--) { var d = data[j][1] - data[j - 1][1]; if (d > 0) climb += d; }
+    function X(d) { return L + (W - L - R) * (d / (tot || 1)); }
+    function Y(e) { return B + (H - T - B) * (1 - (e - lo) / (hi - lo)); }
+    var pts = [], k;
+    for (k = 0; k < data.length; k++) pts.push([X(data[k][0]).toFixed(1), Y(data[k][1]).toFixed(1)]);
+    var line = pts.map(function (p) { return p[0] + ' ' + p[1]; }).join(' ');
+    var bottom = (H - T).toFixed(1);
+    var areaPts = L + ',' + bottom + ' ' + line + ' ' + (W - R) + ',' + bottom;
+    var fmt = function (n) { return Math.round(n).toLocaleString('en-US'); };
+    var mcol = 'var(--secondary-color,#8a8a8a)', tcol = 'var(--content,#1d1d1f)';
+    var svg = '<svg viewBox="0 0 ' + W + ' ' + H + '" role="img" aria-label="Elevation profile" style="width:100%;height:auto;display:block" xmlns="http://www.w3.org/2000/svg">';
+    svg += '<polygon points="' + areaPts + '" fill="' + color + '" opacity="0.16"/>';
+    svg += '<polyline points="' + line + '" fill="none" stroke="' + color + '" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>';
+    svg += '<line x1="' + L + '" y1="' + bottom + '" x2="' + (W - R) + '" y2="' + bottom + '" stroke="var(--border,#d4d4d4)" stroke-width="1" stroke-dasharray="3 3"/>';
+    svg += '<text x="' + L + '" y="' + (T - 4) + '" fill="' + mcol + '" font-size="11">min ' + fmt(lo) + ' m</text>';
+    svg += '<text x="' + (W - R) + '" y="' + (T - 4) + '" text-anchor="end" fill="' + mcol + '" font-size="11">max ' + fmt(hi) + ' m</text>';
+    svg += '<text x="' + L + '" y="' + (H - 8) + '" fill="' + tcol + '" font-size="12" font-weight="600">\u2191 ' + fmt(climb) + ' m</text>';
+    svg += '<text x="' + (W - R) + '" y="' + (H - 8) + '" text-anchor="end" fill="' + tcol + '" font-size="12" font-weight="600">' + fmt(tot * 10) / 10 + ' km</text>';
+    svg += '</svg>';
+    el.innerHTML = svg;
+  }
   function init() {
     var el = document.getElementById('tm-{{ $id }}');
     if (!el || typeof L === 'undefined' || el.dataset.tmInit) return;
@@ -32,17 +108,21 @@
     }).addTo(map);
     fetch('{{ $data }}').then(function (r) { return r.json(); }).then(function (fc) {
       if (!fc || !fc.features || !fc.features.length) return;
-      var bounds = [];
+      var bounds = [], allCoords = [], totalDist = 0;
       fc.features.forEach(function (f) {
         var line = L.geoJSON(f, {
           style: { color: '{{ $color }}', weight: {{ int $weight }}, opacity: 0.95 }
         });
         var d = (f.properties && f.properties.distanceKm) ? f.properties.distanceKm + ' km' : '';
-        line.bindPopup((f.properties && f.properties.name || 'Track') + (d ? ' &mdash; ' + d : ''));
+        if (f.properties && f.properties.distanceKm) totalDist += f.properties.distanceKm;
+        line.bindPopup((f.properties && f.properties.name || 'Track') + (d ? ' \u00b7 ' + d : ''));
         line.addTo(map);
         bounds.push(line.getBounds());
+        allCoords = allCoords.concat((f.geometry && f.geometry.coordinates) || []);
       });
       if (bounds.length) map.fitBounds(L.latLngBounds(bounds), { padding: [24, 24], maxZoom: 13 });
+      addPins(map, allCoords);
+      drawProfile('tmelev-{{ $id }}', allCoords, '{{ $color }}', totalDist);
     });
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
