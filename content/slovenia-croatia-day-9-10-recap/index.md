@@ -22,6 +22,6 @@ All told: nine riding days plus the rest day at Opatija, about 673 km and 418 mi
 
 The GPS from my watch, mapped. Day 10 split into two recordings (the ride, then the leg into Ljubljana).
 
-{{< trackmap id="day9" data="/slovenia-croatia-day-9-10-recap/tracks/day9.geojson" label="Day 9" color="#27ae60" height="360px" >}}
+{{< trackmap id="day9" data="/slovenia-croatia-day-9-10-recap/tracks/day9.geojson" label="Day 9" height="360px" >}}
 
-{{< trackmap id="day10" data="/slovenia-croatia-day-9-10-recap/tracks/day10.geojson" label="Day 10" color="#7f8c8d" height="360px" >}}
+{{< trackmap id="day10" data="/slovenia-croatia-day-9-10-recap/tracks/day10.geojson" label="Day 10" height="360px" >}}

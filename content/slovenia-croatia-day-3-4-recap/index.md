@@ -32,6 +32,6 @@ Across the two days the stats tell a story. Day 3 came in at 45.78 miles and 4,1
 
 The GPS from my watch, mapped.
 
-{{< trackmap id="day3" data="/slovenia-croatia-day-3-4-recap/tracks/day3.geojson" label="Day 3" color="#d35400" height="360px" >}}
+{{< trackmap id="day3" data="/slovenia-croatia-day-3-4-recap/tracks/day3.geojson" label="Day 3" height="360px" >}}
 
-{{< trackmap id="day4" data="/slovenia-croatia-day-3-4-recap/tracks/day4.geojson" label="Day 4" color="#2980b9" height="360px" >}}
+{{< trackmap id="day4" data="/slovenia-croatia-day-3-4-recap/tracks/day4.geojson" label="Day 4" height="360px" >}}

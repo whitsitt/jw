@@ -30,6 +30,6 @@ Tomorrow brings the highest point of the whole trip so far, roughly 5,300 feet u
 
 The GPS from my watch, mapped.
 
-{{< trackmap id="day1" data="/slovenia-croatia-day-1-2-recap/tracks/day1.geojson" label="Day 1" color="#c0392b" height="360px" >}}
+{{< trackmap id="day1" data="/slovenia-croatia-day-1-2-recap/tracks/day1.geojson" label="Day 1" height="360px" >}}
 
-{{< trackmap id="day2" data="/slovenia-croatia-day-1-2-recap/tracks/day2.geojson" label="Day 2" color="#e67e22" height="360px" >}}
+{{< trackmap id="day2" data="/slovenia-croatia-day-1-2-recap/tracks/day2.geojson" label="Day 2" height="360px" >}}

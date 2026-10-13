@@ -24,8 +24,8 @@ Five days in, the legs are carrying stories, from the gravel grind of Day 5 to t
 
 The GPS from my watch, mapped. The rest day on the coast has no track.
 
-{{< trackmap id="day5" data="/slovenia-croatia-day-5-8-recap/tracks/day5.geojson" label="Day 5" color="#16a085" height="360px" >}}
+{{< trackmap id="day5" data="/slovenia-croatia-day-5-8-recap/tracks/day5.geojson" label="Day 5" height="360px" >}}
 
-{{< trackmap id="day6" data="/slovenia-croatia-day-5-8-recap/tracks/day6.geojson" label="Day 6" color="#8e44ad" height="360px" >}}
+{{< trackmap id="day6" data="/slovenia-croatia-day-5-8-recap/tracks/day6.geojson" label="Day 6" height="360px" >}}
 
-{{< trackmap id="day8" data="/slovenia-croatia-day-5-8-recap/tracks/day8.geojson" label="Day 8" color="#2c3e50" height="360px" >}}
+{{< trackmap id="day8" data="/slovenia-croatia-day-5-8-recap/tracks/day8.geojson" label="Day 8" height="360px" >}}
