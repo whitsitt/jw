@@ -25,3 +25,11 @@ The sandal gave me trouble. Getting off the bike I found a broken strap. Still r
 Across two days the hills are stacking up. 57 miles and 5,200 feet of gain on Day 1, then a lighter 46 miles and 2,800 feet on Day 2, and the numbers tell a nice story. 9.8 mph at 130 beats on the big day, versus 11.3 and 124 on the shorter one. Legs are loosening up.
 
 Tomorrow brings the highest point of the whole trip so far, roughly 5,300 feet up, and the route data says it tops out there before anything else on the itinerary. The climb comes early, so legs should be ready. I'm more worried about the long valley grind after it, constant cranking on busier roads. Coldest night of the forecast is on us now, with rain creeping in later in the week. So tonight the quilt earns its keep.
+
+## The actual tracks
+
+The GPS from my watch, mapped.
+
+{{< trackmap id="day1" data="/slovenia-croatia-day-1-2-recap/tracks/day1.geojson" label="Day 1" height="360px" >}}
+
+{{< trackmap id="day2" data="/slovenia-croatia-day-1-2-recap/tracks/day2.geojson" label="Day 2" height="360px" >}}
